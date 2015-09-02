@@ -18,7 +18,7 @@
 	
 	$ git clone https://github.com/yangboz/mod_websocket_mosquitto
 	
-	$ scons
+	$ cd mod_websocket_mosquitto
 	
 	$ scons
 
