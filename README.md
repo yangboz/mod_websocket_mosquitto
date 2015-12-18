@@ -24,9 +24,11 @@
 
 	$ sudo scons install
 	
-	$ cp mod_websocket_mosquitto /usr/lib/apache2/modules/
+	$ cd ..
+	
+	$ cp -r mod_websocket_mosquitto /usr/lib/apache2/modules/
 
-	$ cd apache-websockets
+	$ cd apache-websocket
 
 	Change apache and apr paths in file SConstruct
 	----------
