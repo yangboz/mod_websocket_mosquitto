@@ -58,7 +58,7 @@
 
 	Compile mosquitto module:
 
-	$ cd mosquitto
+	$ cd mod_websocket_mosquitto\examples
 
 	Change paths in file SConstruct
 	----------
