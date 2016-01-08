@@ -85,12 +85,12 @@
 	$ sudo vi /etc/apache2/mods-available/websocket.conf
 	---
 	<IfModule mod_websocket.c>
-	Loadmodule mod_websocket_mosquitto /usr/lib/apache2/modules/mod_websocket_mosquitto.so
+	Loadmodule mod_websocket_mosquitto /usr/lib/apache2/modules/mod_websocket_mosquitto/mod_websocket_mosquitto.so
 	  <Location /mosquitto>
 		MosBroker localhost
 		MosPort 1883
 		SetHandler websocket-handler
-		WebSocketHandler /usr/lib/apache2/modules/mod_websocket_mosquitto.so mosquitto_init
+		WebSocketHandler /usr/lib/apache2/modules/mod_websocket_mosquitto/mod_websocket_mosquitto.so mosquitto_init
 	  </Location>
 	</IfModule>
 	---
